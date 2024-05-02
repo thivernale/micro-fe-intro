@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/home/home.iml" filepath="$PROJECT_DIR$/home/home.iml" />
       <module fileurl="file://$PROJECT_DIR$/micro-fe-intro.iml" filepath="$PROJECT_DIR$/micro-fe-intro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pdp/pdp.iml" filepath="$PROJECT_DIR$/pdp/pdp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/server.iml" filepath="$PROJECT_DIR$/server/server.iml" />
     </modules>
   </component>
 </project>
