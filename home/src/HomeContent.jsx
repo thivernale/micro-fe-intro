@@ -10,7 +10,6 @@ export default function HomeContent() {
     getProducts().then(setProducts);
   }, []);
 
-
   return (
     <div className="grid grid-cols-2 my-10 gap-5">
       {products.map((product) => (

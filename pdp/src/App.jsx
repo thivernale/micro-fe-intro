@@ -4,6 +4,7 @@ import { createRoot } from 'react-dom/client';
 import './index.scss';
 import Header from 'home/Header';
 import Footer from 'home/Footer';
+import PDPContent from './PDPContent';
 
 const HeaderLazy = lazy(() => import('home/Header'));
 
@@ -20,7 +21,9 @@ const App = () => {
       }}>{showHeader ? 'Hide lazy header ' : 'Show lazy header '}
       </button>
       <Header />
-      <div className="my-10">Product Details Page Content</div>
+      <div className="my-10">
+        <PDPContent />
+      </div>
       <Footer />
     </div>
   );
