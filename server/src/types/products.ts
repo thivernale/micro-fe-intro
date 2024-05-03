@@ -37,6 +37,26 @@ const products: Product[] = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     image: 'http://localhost:8080/image.jpg',
   },
+  {
+    id: 4,
+    name: 'innovative',
+    price: 9,
+    description:
+      'Begins riding thoughts purchased translated mother presidential, comics expo boutique cheats gene penalty specific, patents unsubscribe. ',
+    longDescription:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    image: 'http://localhost:8080/image.jpg',
+  },
+  {
+    id: 5,
+    name: 'friend',
+    price: 9,
+    description:
+      'Comfort dive newbie officer adolescent index group, mumbai grande necessary wilson boulder relocation producers, concert announce photographers birthday traditions chris engine. ',
+    longDescription:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    image: 'http://localhost:8080/image.jpg',
+  },
 ];
 
 export default products;
