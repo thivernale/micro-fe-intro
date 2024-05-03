@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 import { currencyConverter, getProductById } from 'home/products';
 
 export default function PDPContent() {
-  const id = 1;
+  const { id } = useParams();
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
@@ -26,7 +27,7 @@ export default function PDPContent() {
       <div>
         <div className="flex">
           <div className="flex-grow font-bold text-3xl">
-            <a>{product.name}</a>
+            {product.name}
           </div>
           <div className="flex-end font-bold text-3xl">{currencyConverter.format(product.price)}</div>
         </div>
