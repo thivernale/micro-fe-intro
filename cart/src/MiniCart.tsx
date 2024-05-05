@@ -12,7 +12,9 @@ export default function MiniCart() {
     setItems(cart.value?.cartItems);
     getCart();
     const subscription = cart.subscribe(value => setItems(value?.cartItems));
-    return subscription.unsubscribe;
+    return () => {
+      subscription.unsubscribe();
+    };
   }, []);
 
   if (!items) {

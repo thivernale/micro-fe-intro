@@ -14,7 +14,9 @@ export default function CartContent() {
     const subscription = (cart as BehaviorSubject<any>).subscribe((value) => {
       setItems(value?.cartItems ?? []);
     });
-    return subscription.unsubscribe;
+    return () => {
+      subscription.unsubscribe();
+    };
   }, []);
 
   return (

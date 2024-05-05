@@ -4400,11 +4400,6 @@ ws@^8.13.0:
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.17.0.tgz#d145d18eca2ed25aaf791a183903f7be5e295fea"
   integrity sha512-uJq6108EgZMAl20KagGkzCKfMEjxmKvZHG7Tlq0Z6nOky7YF7aq4mOx6xK8TJ/i1LeK4Qus7INktacctDgY8Ow==
 
-y@^4.5.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/y/-/y-0.3.2.tgz#bd08711d26b034d026a30599a9919a63fe43c3fa"
-  integrity sha512-OJQTQuD3iqJqXzYKs2AgZqQrfPuTOjIFm3jvIc+2SxP6QSB5Ab9Ja9A5mWEDngjaJiEgsHbp2Q2RR/U2pTpTEw==
-
 yallist@^3.0.2:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-3.1.1.tgz#dbb7daf9bfd8bac9ab45ebf602b8cbad0d5d08fd"

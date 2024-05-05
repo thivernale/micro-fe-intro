@@ -31,7 +31,9 @@ export function useLoggedIn() {
       setLoggedIn(!!jwt.value);
       localStorage.setItem('jwt', jwt.value);
     });
-    return subscription.unsubscribe;
+    return () => {
+      subscription.unsubscribe();
+    };
   }, []);
 
   return loggedIn;
