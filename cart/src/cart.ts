@@ -3,7 +3,7 @@ import { BehaviorSubject } from 'rxjs';
 
 const API_SERVER = 'http://localhost:8080';
 
-export const jwt = new BehaviorSubject<string>('');
+export const jwt = new BehaviorSubject<string>(localStorage.getItem('jwt') ?? '');
 export const cart = new BehaviorSubject<any>(null as any);
 
 export function login(username: string, password: string) {
@@ -29,11 +29,17 @@ export function useLoggedIn() {
     setLoggedIn(!!jwt.value);
     const subscription = jwt.subscribe(_ => {
       setLoggedIn(!!jwt.value);
+      localStorage.setItem('jwt', jwt.value);
     });
     return subscription.unsubscribe;
   }, []);
 
   return loggedIn;
+}
+
+export function logout() {
+  localStorage.removeItem('jwt');
+  jwt.next('');
 }
 
 export function getCart() {

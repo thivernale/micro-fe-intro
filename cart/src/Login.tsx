@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './index.scss';
 
-import { login, useLoggedIn } from './cart';
+import { login, logout, useLoggedIn } from './cart';
 
 export default function Login() {
 
@@ -12,13 +12,17 @@ export default function Login() {
   const [password, setPassword] = useState('123');
 
   if (loggedIn) {
-    return null;
+    return (
+      <span title="Logout" onClick={() => logout()}>
+        <i className={'ri-logout-box-r-line text-2xl cursor-pointer'} id="logout"></i>
+      </span>
+    );
   }
 
   return (
     <>
       <span onClick={() => setShowLogin(!showLogin)}>
-        <i className={'ri-fingerprint-line text-2xl'} id="showlogin"></i>
+        <i className={'ri-fingerprint-line text-2xl cursor-pointer'} id="showlogin"></i>
       </span>
       {showLogin && (
         <div

@@ -9,6 +9,8 @@ export default function HomeContent() {
 
   const loggedIn = useLoggedIn();
 
+  const PDP_URL = 'http://localhost:3001';
+
   useEffect(() => {
     getProducts().then(setProducts);
   }, []);
@@ -20,7 +22,7 @@ export default function HomeContent() {
           <img src={product.image} alt={product.name} className="w-full h-auto" />
           <div className="flex">
             <div className="flex-grow font-bold">
-              <a>{product.name}</a>
+              <a href={`${PDP_URL}/product/${product.id}`}>{product.name}</a>
             </div>
             <div className="text-end">{currencyConverter.format(product.price)}</div>
           </div>

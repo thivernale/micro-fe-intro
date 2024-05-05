@@ -2,7 +2,7 @@ import React, { Fragment, useEffect, useState } from 'react';
 
 // @ts-ignore
 import { currencyConverter } from 'home/products';
-import { cart, clearCart } from './cart';
+import { cart, clearCart, getCart } from './cart';
 
 export default function MiniCart() {
   const [items, setItems] = useState<any[]>(undefined as any);
@@ -10,6 +10,7 @@ export default function MiniCart() {
 
   useEffect(() => {
     setItems(cart.value?.cartItems);
+    getCart();
     const subscription = cart.subscribe(value => setItems(value?.cartItems));
     return subscription.unsubscribe;
   }, []);
