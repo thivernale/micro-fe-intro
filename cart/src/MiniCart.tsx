@@ -1,8 +1,8 @@
 import React, { Fragment, useEffect, useState } from 'react';
-import { cart, clearCart } from './cart';
 
 // @ts-ignore
 import { currencyConverter } from 'home/products';
+import { cart, clearCart } from './cart';
 
 export default function MiniCart() {
   const [items, setItems] = useState<any[]>(undefined as any);
@@ -47,7 +47,7 @@ export default function MiniCart() {
               <div></div>
               <div></div>
               <div></div>
-              <div>
+              <div className="text-right">
                 {currencyConverter.format(
                   items.reduce((a, v) => a + v.quantity * v.price, 0),
                 )}

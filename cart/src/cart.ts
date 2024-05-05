@@ -4,7 +4,7 @@ import { BehaviorSubject } from 'rxjs';
 const API_SERVER = 'http://localhost:8080';
 
 export const jwt = new BehaviorSubject<string>('');
-export const cart = new BehaviorSubject<Record<string, any>>(null as any);
+export const cart = new BehaviorSubject<any>(null as any);
 
 export function login(username: string, password: string) {
   fetch(`${API_SERVER}/auth/login`, {
