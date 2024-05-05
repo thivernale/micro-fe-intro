@@ -40,6 +40,7 @@ export function useLoggedIn() {
 export function logout() {
   localStorage.removeItem('jwt');
   jwt.next('');
+  cart.next([]);
 }
 
 export function getCart() {

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import { currencyConverter, getProducts } from './products';
 import { addToCart, useLoggedIn } from 'cart/cart';
@@ -8,8 +9,6 @@ export default function HomeContent() {
   const [products, setProducts] = useState([]);
 
   const loggedIn = useLoggedIn();
-
-  const PDP_URL = 'http://localhost:3001';
 
   useEffect(() => {
     getProducts().then(setProducts);
@@ -22,7 +21,7 @@ export default function HomeContent() {
           <img src={product.image} alt={product.name} className="w-full h-auto" />
           <div className="flex">
             <div className="flex-grow font-bold">
-              <a href={`${PDP_URL}/product/${product.id}`}>{product.name}</a>
+              <Link to={`product/${product.id}`}>{product.name}</Link>
             </div>
             <div className="text-end">{currencyConverter.format(product.price)}</div>
           </div>
