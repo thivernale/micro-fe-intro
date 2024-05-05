@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import { cart, clearCart } from './cart';
 
+// @ts-ignore
 import { currencyConverter } from 'home/products';
 
 export default function MiniCart() {
@@ -62,9 +63,9 @@ export default function MiniCart() {
                   Clear Cart
                 </button>
               </div>
-              <div className="flex-end">
+              <div className="text-end">
                 <button
-                  id="clearcart"
+                  id="checkoutcart"
                   className="bg-green-900 text-white py-2 px-5 rounded-md text-sm"
                   onClick={clearCart}
                 >

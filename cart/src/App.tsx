@@ -4,7 +4,9 @@ import ReactDOM from 'react-dom/client';
 import './index.scss';
 import 'remixicon/fonts/remixicon.css';
 
+// @ts-ignore
 import Header from 'home/Header';
+// @ts-ignore
 import Footer from 'home/Footer';
 import CartContent from './CartContent';
 
