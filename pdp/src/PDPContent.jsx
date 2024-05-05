@@ -29,7 +29,7 @@ export default function PDPContent() {
           <div className="flex-grow font-bold text-3xl">
             {product.name}
           </div>
-          <div className="flex-end font-bold text-3xl">{currencyConverter.format(product.price)}</div>
+          <div className="text-end font-bold text-3xl">{currencyConverter.format(product.price)}</div>
         </div>
         <div className="text-lg mt-10">{product.description}</div>
         <div className="text-lg mt-10">{product.longDescription}</div>
